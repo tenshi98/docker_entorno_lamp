@@ -1,6 +1,6 @@
 # Entorno de trabajo LAMP para Docker
 
-![screenshot](https://raw.githubusercontent.com/tenshi98/docker_entorno_lamp/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/tenshi98/docker_entorno_lamp/refs/heads/main/www/.dash/assets/images/preview.png)
 
 
 ## Especificaciones
