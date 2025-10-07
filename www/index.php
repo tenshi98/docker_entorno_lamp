@@ -87,7 +87,7 @@
                             <ul>
                                 <li><a target="_blank" rel="noopener noreferrer" href=".dash/phpinfo.php">phpinfo()</a></li>
                                 <li><a target="_blank" rel="noopener noreferrer" href=".dash/test_db.php">Prueba de conexión de Base de Datos con mysqli</a></li>
-                                <li><a target="_blank" rel="noopener noreferrer" href=".dash/test_db_pdo.php">rueba de conexión de Base de Datos con PDO</a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href=".dash/test_db_pdo.php">Prueba de conexión de Base de Datos con PDO</a></li>
                             </ul>
                         </div>
                     </div>
