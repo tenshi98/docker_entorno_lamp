@@ -1,0 +1,5 @@
+.hero-image {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg");height: 50%;background-position: center;
+background-repeat: no-repeat;background-size: cover;position: relative;}
+.hero .title {color: #ffffff;}
+.hero .subtitle {color: #fafafa;}
+.bd-notification {background-color: hsl(221,14%,96%);border-radius: var(--bulma-radius);color: hsl(221,14%,29%);font-weight: var(--bulma-weight-semibold);padding: 1.25rem 0;position: relative;}
