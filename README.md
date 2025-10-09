@@ -48,8 +48,9 @@ sudo dnf install docker-compose
 ### Inicio de Servicios al encender el equipo
 
 ```bash
-sudo systemctl start docker.service
+sudo systemctl status docker.service
 sudo systemctl enable docker.service
+sudo systemctl start docker.service
 ```
 
 ### Descarga y ejecución
