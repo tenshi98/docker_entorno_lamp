@@ -85,13 +85,16 @@ sudo ./stop.sh
 
 #### Permite el control y gestión de los contenedores, ademas de su estado y los archivos de configuración que tiene, ideal para eliminar los volúmenes residuales que quedan en cada reinicio del entorno
 
-```cmd
+```bash
 ### Instalación de docker.io:
 sudo apt install docker.io
 
 ### Instalación de portainer:
 sudo docker volume create portainer_data
 sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+
+#URL de acceso
+http://localhost:9443
 
 #repositorios portainer (opciones varias)
 https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json
@@ -151,3 +154,67 @@ En producción, se deben modificar como mínimo los siguientes aspectos:
 - php handler: mod_php=> php-fpm
 - Proteger a los usuarios de MySQL con limitaciones de IP de origen adecuadas
 
+
+## Aplicaciones Extras
+
+### Plane
+
+Plane, una herramienta de gestión de proyectos de código abierto para rastrear problemas, ejecutar ciclos de sprints y administrar hojas de ruta de productos sin el caos que supone administrar la herramienta en sí.
+
+URL: https://github.com/makeplane/plane
+
+```bash
+#Create a folder named plane-selfhost on your machine for deployment and data storage.
+mkdir plane-selfhost
+
+#Navigate to this folder using the cd command.
+cd plane-selfhost
+
+#Download the latest stable release.
+curl -fsSL -o setup.sh https://github.com/makeplane/plane/releases/latest/download/setup.sh
+
+#Make the file executable.
+chmod +x setup.sh
+
+#Run the following command:
+./setup.sh
+
+#This will prompt you with the below options.
+Select a Action you want to perform:
+   1) Install (arm64)
+   2) Start
+   3) Stop
+   4) Restart
+   5) Upgrade
+   6) View Logs
+   7) Backup Data
+   8) Exit
+Action [2]: 1
+
+#Enter 1 as input. This will create a folder plane-app or plane-app-preview (in case of preview deployment) and will download the docker-compose.yaml and plane.env files.
+
+#Enter 8 to exit.
+
+#Set up the environment variables. You can use any text editor to edit this file
+
+#Run the following command to continue with the setup.
+./setup.sh
+
+#Enter 2 as input to start the services.
+```
+
+### N8N
+
+N8N es una plataforma de automatización de flujos de trabajo que ofrece a los equipos técnicos la flexibilidad del código con la velocidad del no-code. Con más de 400 integraciones, capacidades de IA nativas y una licencia de código justo, n8n te permite crear automatizaciones potentes mientras mantienes el control total de tus datos e implementaciones.
+
+URL: https://github.com/n8n-io/n8n
+
+```bash
+### Instalación:
+sudo docker volume create n8n_data
+sudo docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+
+#URL de acceso
+http://localhost:5678
+
+```
