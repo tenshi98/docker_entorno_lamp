@@ -218,3 +218,18 @@ sudo docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n doc
 http://localhost:5678
 
 ```
+
+### FossFLOW
+
+FossFLOW es una herramienta de código abierto y gratuita para crear diagramas isométricos atractivos de software o infraestructura.
+
+URL: https://github.com/stan-smith/FossFLOW
+
+```bash
+### Instalación:
+docker run -p 8096:80 -v $(pwd)/diagrams:/data/diagrams stnsmith/fossflow:latest
+
+#URL de acceso
+http://localhost:8096
+
+```
