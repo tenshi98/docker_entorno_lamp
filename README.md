@@ -154,6 +154,7 @@ En producción, se deben modificar como mínimo los siguientes aspectos:
 - php handler: mod_php=> php-fpm
 - Proteger a los usuarios de MySQL con limitaciones de IP de origen adecuadas
 
+<hr>
 
 ## Aplicaciones Extras
 
