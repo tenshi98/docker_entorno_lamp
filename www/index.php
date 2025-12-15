@@ -72,6 +72,25 @@
                                     mysqli_close($link);
                                     ?>
                                 </li>
+                                <li>
+                                    <?php
+                                    require_once '.dash/predis/vendor/autoload.php';
+
+                                    try {
+                                        $client = new Predis\Client([
+                                            'scheme' => 'tcp',
+                                            'host'   => '172.18.0.2',
+                                            'port'   => 6379,
+                                        ]);
+
+                                        $info = $client->info();
+                                        echo "Redis " . $info['Server']['redis_version'] . PHP_EOL;
+
+                                    } catch (Exception $e) {
+                                        echo "Error: " . $e->getMessage() . PHP_EOL;
+                                    }
+                                    ?>
+                                </li>
                             </ul>
                         </div>
                         <h3 class="title is-3 has-text-centered">Servicios</h3>
