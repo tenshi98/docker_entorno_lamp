@@ -6,8 +6,8 @@
 ## Especificaciones
 
 - Apache con vhosts y SSL (<http://localhost> & <https://localhost>)
-- PHP [Versiones actuales soportadas] (8.1.x, 8.2.x, 8.3.x)
-- PHP [Fin de ciclo de vida / no recomendadas] (5.4.x, 5.6.x, 7.0.x, 7.1.x, 7.2.x, 7.3.x, 7.4.x, 8.0.x)
+- PHP [Versiones actuales soportadas] (8.2.x, 8.3.x, 8.4.x, 8.5.x)
+- PHP [Fin de ciclo de vida / no recomendadas] (5.4.x, 5.6.x, 7.0.x, 7.1.x, 7.2.x, 7.3.x, 7.4.x, 8.0.x, 8.1.x)
 - MySQL (5.7, 8.x)
 - MariaDB (lts, latest, 10.x, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9, 10.10, 10.11, 11.x, 11.0, 11.1, 11.2, 11.3-rc)
 - phpMyAdmin
